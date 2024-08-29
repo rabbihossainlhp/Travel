@@ -1,0 +1,168 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navItems{
+  width: 95%;
+  position: relative;
+  height: 5rem;
+  background-color: rgba(0, 238, 255, 0.716);
+  backdrop-filter: blur(5px);
+  border-radius: 25px;
+  position: fixed;
+  top: 2%;
+  left:50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3rem;
+  box-shadow: 0px 0px 15px rgb(144, 136, 136);
+  z-index: 999;
+}
+.navbar-logo{
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 2rem;
+  color: rgb(255, 106, 0);
+}
+
+.menueItems{
+  width: 62%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  right: 3rem;
+
+}
+
+.Nav-Unorder{
+  height: 100%;
+  width: 70%;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  align-items: center;
+  position: absolute;
+  left: 4rem;
+
+}
+.Nav-Unorder li{
+  font-size: 1.2rem;
+  font-family: sans-serif;
+  font-weight: 600;
+  align-content: center;
+  height: 100%;
+  cursor: pointer;
+  padding: 0 1rem;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+}
+.Nav-Unorder li i{
+  margin-right: 5px;
+  color: rgb(93, 14, 143);
+  font-size: 1.1rem;
+}
+.Nav-Unorder li:hover{
+  background-color: rgba(0, 0, 255, 0.386);
+}
+.Nav-Unorder li a{
+  text-decoration: none;
+  color: rgb(255, 0, 0);
+}
+.signBtn{
+  width: 20%;
+  height: 2.6rem;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(255, 106, 0);
+  color: antiquewhite;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+
+
+}
+.signBtn:active{
+  transform: scale(0.95);  
+}
+.open-close{
+  display: none;
+  position: absolute;
+  right: 1.8rem;
+  top: 1.8rem;
+  z-index: 10;
+  transition: all 0.4s;
+
+}
+.open-close i{
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+.open-close i:active{
+  transform: scale(0.95);
+}
+
+
+@media(max-width:1100px){
+
+  .navItems{
+    z-index: 9;
+  }
+
+  .menueItems{
+    flex-direction: column;
+    width: 100%;
+    height: 50vh;
+    top: 0;
+    left: 50%;
+    transform: translateX(-250%);
+    /* transition: all 0.3s; */
+  }
+  
+  .show{
+    transform: translateX(-50%);
+    transition: 0.5s;
+  }
+
+  .hide{
+    transform: translateX(-250%);
+    transition: 0.3s;
+  }
+
+  .Nav-Unorder{
+    flex-direction: column;
+    background-color: rgba(244, 115, 23, 0.964);
+    width: 100%;
+    justify-content: space-evenly;
+    height: 100%;
+    padding-bottom: 3rem;
+    left: 0;    
+  }
+  .Nav-Unorder li{
+    font-size: 1.1rem;
+    width: 100%;
+    justify-content: center;
+  }
+  .signBtn{
+    position: relative;
+    top: 88%;
+    left: 50;
+    background-color: rgba(0, 238, 255, 0.716);
+  }
+  .Nav-Unorder li a{
+    color: white;
+  }
+  .Nav-Unorder li i{
+    color: aliceblue;
+  }
+  .open-close{
+    display: inline-block;
+  }
+}

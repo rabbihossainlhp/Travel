@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.root{
+    margin-top: 7rem;
+    height: 50vh;
+    width: 100%;
+    background-color: rgb(43, 51, 43);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1.5rem 0;
+    overflow: hidden;
+}
+
+.rightReserveSection,.GeneralSection,.SocialSection{
+    width: 28%;
+    height: 100%;
+}
+.rightReserveSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: "Roboto";
+    border-right: 2px solid rgb(181, 126, 59);
+}
+.rightReserveSection h1{
+    color: azure;
+}
+.rightReserveSection p{
+    color: azure;
+    width: 65%;
+}
+.rightReserveSection p a{
+    color: rgb(181, 126, 59);
+}
+
+.GeneralSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-right: 2px solid rgb(181, 126, 59);
+    align-items: center;
+}
+.GeneralSection a{
+    color: rgb(181, 126, 59);
+    font-size: 1.8rem;
+}
+
+.SocialSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 2rem;
+}
+.SocialSection a{
+    color: rgb(181, 126, 59);
+    text-decoration: none;
+}
+.SocialSection a i{
+    margin-right: 15px;
+    color: aqua;
+    font-size: 2.5rem;
+}
+
+@media(max-width:680px){
+    .root{
+        height: 70vh;
+        flex-direction: column;
+    }
+    .rightReserveSection p{
+        width: 100%;
+    }
+    .rightReserveSection{
+        width: 90%;
+        border: none;
+    }
+    .GeneralSection{
+        width: 90%;
+        border-left: 2px solid rgb(181, 126, 59);
+        flex-direction: row;
+        margin-top: 2rem;
+    }
+    .GeneralSection a{
+        font-size: 1.4rem;
+    }
+    .SocialSection{
+        width: 90%;
+        flex-direction: row;
+        margin-top: 2rem;
+    }
+    .SocialSection a{
+        font-size: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        font-size: 1rem;
+    }
+}
