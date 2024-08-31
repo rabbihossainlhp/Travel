@@ -6,7 +6,7 @@ const Service = () => {
     return (
         <div>
             <Navbar sendItemsData={menueData}/>
-            <h1>wse service</h1>
+            <h1>service Page is coming soon.</h1>
         </div>
     );
 };
