@@ -106,7 +106,7 @@ export const aboutSectionData = [
 import one from "/src/assets/third.jpg";
 import two from "/src/assets/second.jpg";
 import three from "/src/assets/elleven.jpg"
-import fourth from "/src/assets/sixth.jpg.jpg"
+import fourth from "/src/assets/sixth.jpg"
 import fifth from "/src/assets/nineth.jpg"
 import sixth from "/src/assets/fourth.jpg"
 import seven from "/src/assets/seventh.jpg"
