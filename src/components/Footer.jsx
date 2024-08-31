@@ -8,7 +8,7 @@ const Footer = (props) => {
             <div className="rightReserveSection">
                 <h1>.Tour@im.</h1>
                 <p>
-                ©2024 .Tur@im. All rights reserved. .Tur@im is a registered trademark of [Your Company Name]. This website and its contents, including text, images, and graphics, are protected by copyright and trademark laws. Unauthorized use or reproduction of any materials on this site is prohibited. By accessing and using this site, you agree to comply with our  <a href="#">Privacy Policy</a> and  <a href="#">Terms and Conditions</a>. For any questions or concerns, please contact us at <a href="#">contact@yourdomain.com.</a> 
+                ©2024 .Tur@im. All rights reserved. .Tur@im is a registered trademark of ".Tur@im.". This website and its contents, including text, images, and graphics, are protected by copyright and trademark laws. Unauthorized use or reproduction of any materials on this site is prohibited. By accessing and using this site, you agree to comply with our  <a href="#">Privacy Policy</a> and  <a href="#">Terms and Conditions</a>. For any questions or concerns, please contact us at <a href="#">contact@yourdomain.com.</a> 
                 </p>
             </div>
             <div className="GeneralSection">
