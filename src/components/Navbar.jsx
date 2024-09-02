@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import "./navbar.css"
 import { NavLink } from 'react-router-dom';
 
+
 const Navbar = (props) => {
     const [openMenue,setOpenMenue]=useState(false);
     const toggleOpenMenue=()=>{
@@ -21,7 +22,8 @@ const Navbar = (props) => {
                         )
                     })}
                 </ul>
-                <button className='signBtn'>Sign Up</button>                
+                <NavLink className='signBtn' to="/signin"><button >Sign Up</button> </NavLink>
+        
             </div>
             <div className="open-close" onClick={toggleOpenMenue}>
                 <i className={`fa-solid ${openMenue?"fa-xmark":"fa-bars"}`}></i>

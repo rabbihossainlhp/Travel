@@ -54,12 +54,12 @@
   font-size: 1.2rem;
   font-family: sans-serif;
   font-weight: 600;
-  align-content: center;
   height: 100%;
   cursor: pointer;
   padding: 0 1rem;
   transition: 0.3s;
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 .Nav-Unorder li i{
@@ -74,24 +74,42 @@
   text-decoration: none;
   color: rgb(255, 0, 0);
 }
+.MenueLink{
+    height: 100%;
+    width: 100%;
+    align-content: center;
+
+}
+
 .signBtn{
   width: 20%;
   height: 2.6rem;
   border-radius: 10px;
   border: none;
   background-color: rgb(255, 106, 0);
-  color: antiquewhite;
-  font-size: 1rem;
-  font-weight: 600;
   cursor: pointer;
   position: absolute;
   right: 0;
-
-
+  overflow: hidden;
 }
 .signBtn:active{
   transform: scale(0.95);  
 }
+
+.signBtn button{
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  color: antiquewhite;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+
+}
+
+
+
 .open-close{
   display: none;
   position: absolute;
@@ -158,11 +176,29 @@
   }
   .Nav-Unorder li a{
     color: white;
+    text-align: center;
   }
   .Nav-Unorder li i{
     color: aliceblue;
+    left: 45%;
+    transform: translateX(-50%);
+    position: relative;
+    
   }
   .open-close{
     display: inline-block;
+  }
+}
+
+@media(max-width:665px){
+  .Nav-Unorder li i{
+    color: aliceblue;
+    left: 42%;    
+  }
+}
+@media(max-width:450px){
+  .Nav-Unorder li i{
+    color: aliceblue;
+    left: 40.5%;    
   }
 }

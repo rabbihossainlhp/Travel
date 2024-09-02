@@ -53,7 +53,7 @@ body{
     width: 100%;
     gap: 10px;
 }
-form input{
+.section2 form input{
     height: 3rem;
     width: 70%;
     border: 1.8px solid rgb(236, 102, 35);
@@ -68,7 +68,7 @@ form textarea{
     padding: 0.5rem 0 0 0.5rem;
 }
 
-form button{
+.section2 form button{
     height: 2.5rem;
     width: 30%;
     cursor: pointer;
@@ -78,7 +78,7 @@ form button{
     font-size: 1.2rem;
     font-weight: 700;
 }
-form button:active{
+.section2 form button:active{
     transform: scale(0.95);
     transition: 0.2s;
 }

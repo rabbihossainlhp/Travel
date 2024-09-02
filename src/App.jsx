@@ -4,6 +4,7 @@ import About from "./pages/About"
 import Service from "./pages/Service"
 import Contact from "./pages/Contact"
 import Notfund from "./pages/Notfund"
+import SignIn from "./pages/SignIn"
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route path="/service" element={<Service/>}/>
         <Route path="/contact" element={<Contact/>}/>
         <Route path="*" element={<Notfund/>}/> 
+        <Route path="/signin" element={<SignIn/>}/>
       </Routes> 
     </BrowserRouter>
     </>

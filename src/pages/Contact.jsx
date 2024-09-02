@@ -22,7 +22,7 @@ const Contact = () => {
 
 
     return (
-        <div>
+        <div className='body_child'>
             <Navbar sendItemsData={menueData}/>
             <div className="manage">
                 <div className="title"><h1>Let's Connect With Us.</h1></div>
