@@ -5,7 +5,7 @@ const HeroSection = (props) => {
     return (
         <div>
             <div className="imgDiv">
-                <img src={props.info} alt="HeroImg" />
+                <img src={props.info} alt="HeroImg" loading='lazy'/>
             </div>
             <div className="HeroText">
                 <h1 className='HeroTitle'>Descover Your Next Adventure.</h1>

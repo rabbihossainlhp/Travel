@@ -20,7 +20,7 @@ const About = () => {
                                     <p>{items.text}</p>    
                                 </div>
                                 <div className="imgSection">
-                                    <img src={items.imgSrc} alt="about us img" />
+                                    <img src={items.imgSrc} alt="about us img" loading='lazy' />
                                 </div>
                             
                             </div>                            

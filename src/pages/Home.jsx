@@ -29,8 +29,8 @@ const Home = () => {
                     <p>{Destination[0].text1}</p>
                 </div>
                 <div className="sec2">
-                    <img src={img1} alt="img1" />
-                    <img src={img2} alt="img2" />
+                    <img src={img1} alt="img1" loading='lazy'/>
+                    <img src={img2} alt="img2" loading='lazy'/>
                 </div>
             </div>
             
@@ -42,8 +42,8 @@ const Home = () => {
                     <p>{Destination[1].text2}</p>
                 </div>
                 <div className="sec2">
-                    <img src={img3} alt="img1" />
-                    <img src={img4} alt="img2" />
+                    <img src={img3} alt="img1" loading='lazy' />
+                    <img src={img4} alt="img2" loading='lazy' />
                 </div>
             </div>
         
