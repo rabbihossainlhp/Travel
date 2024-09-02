@@ -48,7 +48,7 @@ body{
 }
 .signUp form input{
     height: 2.5rem;
-    width: 100%;
+    width: 90%;
     border-radius: 7px;
     border: none;
     outline: none;
@@ -70,8 +70,82 @@ body{
     border-radius: 3px;
     font-size: 1rem;
     cursor: pointer;
+    font-weight: bold;
 }
 .signUp form button:active{
     transform: scale(0.95);
     transition: 0.1s;
 }
+
+.signUp p{
+    margin-top: -0.5rem;
+    font-weight: bold;
+}
+
+.ConnectGGL{
+    width: 100%;
+    /* border: 2px solid red; */
+    height: 15%;
+    padding: 1rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.ConnectGGL h3{
+    text-align: center;
+    font-weight: normal;
+    font-size: 15px;
+    margin-top: -0.5rem;
+}
+.optionGGL{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.FB img{
+    height: 2rem;
+    width: 2rem;
+    object-fit: cover;
+}
+.GGL img{
+    height: 2rem;
+    width: 2rem;
+    object-fit: cover;
+}
+
+.GGL,.FB{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    border: 1.7px solid orange;
+    border-radius: 30px;
+    padding: 0.3rem 0.8rem;
+    cursor: pointer;
+    background-color: rgb(212, 238, 229);
+    width: 47%;
+    height: 2.7rem;
+}
+
+.signInFooter{
+    position: absolute;
+    top:100%;
+    margin-top: 5vh;
+    width: 100%;
+    
+}
+
+
+
+@media(max-width:930px){
+    .boxDiv{
+        width: 50vh;
+    }
+}
+@media(max-width:470px){
+    .boxDiv{
+        width: 38vh;
+    }
+}   
