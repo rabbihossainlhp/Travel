@@ -38,17 +38,10 @@ const SignIn = () => {
 
         try {
 
-            //first send ..
-            const JsonData = JSON.parse(localStorage.getItem("singleUser"));
+            console.log(dataCollect);
+            alert(JSON.stringify(dataCollect));
+
             
-            if(JsonData == null){
-                JsonData = [];
-            }
-
-            JsonData.push(dataCollect);
-            localStorage.setItem("singleUser",JSON.stringify(JsonData));
-
-
             setdataCollect({
                 First_Name: "",
                 Last_Name: "",
@@ -58,8 +51,6 @@ const SignIn = () => {
                 Confirm_Password:""
             });
 
-            console.log(dataCollect);
-            alert(JSON.stringify(dataCollect));
             
         } catch ( derror) {
             console.log("Error occur to store data into local storage",derror);
