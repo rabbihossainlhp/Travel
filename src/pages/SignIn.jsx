@@ -51,6 +51,7 @@ const SignIn = () => {
         });
 
         console.log(dataCollect);
+        alert(JSON.stringify(dataCollect));
 }
 
 
