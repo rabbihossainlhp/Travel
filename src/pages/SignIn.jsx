@@ -35,26 +35,35 @@ const SignIn = () => {
         
         //Store and get this data from web as json formate...
     
-         //first send ..
-            const JsonData = JSON.parse(localStorage.getItem("singleUser"));
-        JsonData.push(dataCollect);
-        localStorage.setItem("singleUser",JSON.stringify(JsonData));
 
-        if(JsonData == null){
-            JsonData = [];
+        try {
+
+            //first send ..
+            const JsonData = JSON.parse(localStorage.getItem("singleUser"));
+            JsonData.push(dataCollect);
+            localStorage.setItem("singleUser",JSON.stringify(JsonData));
+
+            if(JsonData == null){
+                JsonData = [];
+            }
+
+            setdataCollect({
+                First_Name: "",
+                Last_Name: "",
+                Gmail:"",
+                Age:"",
+                Password:"",
+                Confirm_Password:""
+            });
+
+            console.log(dataCollect);
+            alert(JSON.stringify(dataCollect));
+            
+        } catch ( derror) {
+            console.log("Error occur to store data into local storage",derror);
         }
 
-        setdataCollect({
-            First_Name: "",
-            Last_Name: "",
-            Gmail:"",
-            Age:"",
-            Password:"",
-            Confirm_Password:""
-        });
-
-        console.log(dataCollect);
-        alert(JSON.stringify(dataCollect));
+        
 }
 
 
