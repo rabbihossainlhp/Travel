@@ -40,12 +40,14 @@ const SignIn = () => {
 
             //first send ..
             const JsonData = JSON.parse(localStorage.getItem("singleUser"));
-            JsonData.push(dataCollect);
-            localStorage.setItem("singleUser",JSON.stringify(JsonData));
-
+            
             if(JsonData == null){
                 JsonData = [];
             }
+
+            JsonData.push(dataCollect);
+            localStorage.setItem("singleUser",JSON.stringify(JsonData));
+
 
             setdataCollect({
                 First_Name: "",
