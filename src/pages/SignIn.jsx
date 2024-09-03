@@ -40,6 +40,9 @@ const SignIn = () => {
         JsonData.push(dataCollect);
         localStorage.setItem("singleUser",JSON.stringify(JsonData));
 
+        if(JsonData == null){
+            JsonData = [];
+        }
 
         setdataCollect({
             First_Name: "",
