@@ -39,7 +39,7 @@ const SignIn = () => {
         try {
 
             console.log(dataCollect);
-            alert(JSON.stringify(dataCollect));
+            // alert(JSON.stringify(dataCollect));
 
             
             setdataCollect({
