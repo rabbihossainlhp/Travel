@@ -146,10 +146,14 @@ body{
     .boxDiv{
         width: 50vh;
     }
+
 }
 @media(max-width:470px){
     .boxDiv{
         width: 38vh;
-        
+    }
+    .ConnectGGL{
+        height: 4.8rem;
+        margin-top: -65px;
     }
 }   
