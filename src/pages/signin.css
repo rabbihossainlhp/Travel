@@ -158,5 +158,6 @@ body{
     }
     .signUp p{
         margin-top: -1.9rem;
+        display: none;
     }
 }   
