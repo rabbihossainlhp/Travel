@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState ,useEffect} from 'react';
 import Navbar from '../components/Navbar';
 import { menueData, socialLink } from '../components/NavItems';
 import "./signin.css";
@@ -11,6 +11,16 @@ import Footer from '../components/Footer';
 
 
 const SignIn = () => {
+
+
+    const setServer =()=>{
+        
+    }
+
+
+
+
+
 
     const [dataCollect,setdataCollect] = useState({
         First_Name: "",
@@ -41,15 +51,56 @@ const SignIn = () => {
             console.log(dataCollect);
             // alert(JSON.stringify(dataCollect));
 
-            
-            setdataCollect({
-                First_Name: "",
-                Last_Name: "",
-                Gmail:"",
-                Age:"",
-                Password:"",
-                Confirm_Password:""
+            (async ()=>{
+                
+                let ExixtingData = await fetch("https://json-travel-4.onrender.com/user");
+                let resData = await ExixtingData.json();
+
+                let newId;
+                if(resData.length>0){
+                    let validID = resData.map(user=>user.id).filter(id=> id !== null && id !== undefined);
+                    
+                    if(validID.length>0){
+                        newId = Math.max(...validID)+1;
+                    }else{
+                        newId = 1;
+                    }
+                }else{
+                    newId = 1;
+                }
+
+                // console.log(newId);
+
+                let newSequentialIdwithData = {
+                    id:newId,
+                    ...dataCollect
+                }
+
+
+
+                let getFetchD = await fetch("https://json-travel-4.onrender.com/user",{
+                    method:"POST",
+                    headers:{
+                        "Content-Type":"application/json"
+                    },
+                    body:JSON.stringify(newSequentialIdwithData)
+                })
+
+
+                let data = await getFetchD.json();
+                // console.log("Success",data);
+
+                setdataCollect({
+                    First_Name: "",
+                    Last_Name: "",
+                    Gmail:"",
+                    Age:"",
+                    Password:"",
+                    Confirm_Password:""
             });
+
+
+            })()
 
             
         } catch ( derror) {
