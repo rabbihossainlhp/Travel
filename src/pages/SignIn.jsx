@@ -65,7 +65,7 @@ const SignIn = () => {
         //this all about only sign up page
         (async ()=>{
                 
-            let ExixtingData = await fetch("https://json-travel-4.onrender.com/user");
+            let ExixtingData = await fetch("https://json-travel-4.onrender.com/NewUser");
             let resData = await ExixtingData.json();
             let newId;
             if(resData.length>0){
@@ -89,7 +89,7 @@ const SignIn = () => {
 
 
 
-            await fetch("https://json-travel-4.onrender.com/user",{
+            await fetch("https://json-travel-4.onrender.com/NewUser",{
                 method:"POST",
                 headers:{
                     "Content-Type":"application/json"
