@@ -189,7 +189,7 @@ const storeForLogin=(e)=>{
                         <input name='number'    onChange={(e)=>{onchangeHandle("Age",e.target.value)}}   value={dataCollect.Age}               type="number"  placeholder='Age' />
                         <input name='password'  onChange={(e)=>{onchangeHandle("Password",e.target.value)}}   value={dataCollect.Password}          type="password" placeholder='Password' />
                         <input name='password2' onChange={(e)=>{onchangeHandle("Confirm_Password",e.target.value)}}   value={dataCollect.Confirm_Password}  type="password" placeholder='Again Password' />
-                        <button type='submit'>Create New</button>
+                        <button type='submit' onClick={changeAction}>Create New</button>
                     </form>)
 
                     }
