@@ -31,6 +31,33 @@ body{
     padding: 1.5rem 0.9rem 1.5rem 0.9rem;
 }
 
+.signUp .h1_login{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 2.8rem;
+    transition: all ease-in-out 0.3s;
+}
+
+.h1_login h1{
+    font-size: 25px;
+    font-family: "Roboto";
+    color: rgb(82, 158, 0);
+}
+.loginSide{
+    width: 5rem;
+    height: 2rem;
+    font-family: monospace;
+    font-weight: 700;
+    background:linear-gradient( rgb(94, 239, 255)0%, rgb(136, 191, 193) 100%);
+    cursor: pointer;
+}
+.loginSide:active{
+    transform: scale(0.95);
+    transition: 0.1s;
+}
+
+
 .signUp form{
     display: flex;
     flex-direction: column;
